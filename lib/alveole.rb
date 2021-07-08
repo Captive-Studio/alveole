@@ -1,4 +1,4 @@
-require "alveole/version"
+require 'alveole/version'
 
 module Alveole
   class Error < StandardError; end
