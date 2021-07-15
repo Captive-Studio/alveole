@@ -1,0 +1,57 @@
+image: ruby:3.0.2-alpine
+
+stages:
+  - build
+  - pre-test
+  - test
+#  - release
+
+cache:
+  key: $CI_PROJECT_NAME
+  paths:
+  - vendor/ruby
+
+before_script:
+  # TODO: use another base image and remove this line
+  - apk add --no-cache git
+  - git checkout -B "$CI_BUILD_REF_NAME"
+  - bundle config --local path 'vendor'
+  - bundle install
+
+build:
+  stage: build
+  script:
+    # - bundle exec rake build
+    - gem build alveole.gemspec
+  except:
+    - /^backup\//
+
+pre-test:lint:rubocop:
+  stage: pre-test
+  script:
+    - bundle exec rubocop -v
+    - bundle exec rubocop -f simple
+  except:
+    - /^backup\//
+
+# pre-test:lint:slim-lint:
+#   stage: pre-test
+#   script:
+#     - bundle exec slim-lint -v
+#     - bundle exec slim-lint .
+#   except:
+#     - /^backup\//
+
+test:
+  stage: test
+  script:
+    - bundle exec rake test
+  except:
+    - /^backup\//
+
+# release:gem:
+#   stage: release
+#   script:
+#     - bundle exec rake release
+#   rules:
+#     - if: '$CI_COMMIT_TAG =~ /^v([0-9]|[1-9][0-9]+)\.([0-9]|[1-9][0-9]+)\.([0-9]|[1-9][0-9]+)$/'
