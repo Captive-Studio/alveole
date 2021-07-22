@@ -27,6 +27,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_dependency 'activesupport', '>= 4.1.0'
+  spec.add_dependency 'view_component', '~> 2.35'
 
   spec.add_development_dependency 'rubocop', '~> 1.18'
 end
