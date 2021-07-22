@@ -1,4 +1,4 @@
-image: ruby:3.0.2-alpine
+image: registry.git.captive.fr/captive/systeme/docker/ruby:3.0.2-0-build
 
 stages:
   - build
@@ -12,8 +12,6 @@ cache:
   - vendor/ruby
 
 before_script:
-  # TODO: use another base image and remove this line
-  - apk add --no-cache git
   - git checkout -B "$CI_BUILD_REF_NAME"
   - bundle config --local path 'vendor'
   - bundle install
