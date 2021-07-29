@@ -26,7 +26,9 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
+  spec.add_dependency 'actionview'
   spec.add_dependency 'activesupport', '>= 4.1.0'
+  spec.add_dependency 'rails'
   spec.add_dependency 'view_component', '~> 2.35'
 
   spec.add_development_dependency 'rubocop', '~> 1.18'
