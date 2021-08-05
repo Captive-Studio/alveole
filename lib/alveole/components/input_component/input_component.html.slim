@@ -1,0 +1,14 @@
+.input class=(@error ? 'input-error' : '')
+  = @form.label @fieldname, @label, class: 'label'
+  - case @type
+    - when :text
+      = @form.text_field @fieldname
+    - when :date
+      = @form.text_field @fieldname, @options.merge(class: 'datepicker')
+    - when :select
+      = @form.select @fieldname, @collection, @options
+    - when :file
+      = @form.file_field @fieldname
+    - when :text_area
+      = @form.text_area @fieldname, @options
+    .input__errors = @error_message if @error

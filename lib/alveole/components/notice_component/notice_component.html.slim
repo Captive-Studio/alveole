@@ -1,0 +1,5 @@
+.alert
+  .alert__title = @title
+  ul.alert__messages
+    - @messages.each do |message|
+      .alert__message = message
