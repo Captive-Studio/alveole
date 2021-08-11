@@ -1,0 +1,11 @@
+class DefinitionComponent < ViewComponent::Base
+  def initialize(label: nil, value: nil, obj: nil, fieldname: nil, options: {})
+    super
+
+    @obj = obj
+    @fieldname = fieldname
+    @value = value || obj&.send(fieldname)
+    @value = ApplicationController.helpers.format_value(@value, options)
+    @label = label || ApplicationController.helpers.label_for(obj, fieldname)
+  end
+end
