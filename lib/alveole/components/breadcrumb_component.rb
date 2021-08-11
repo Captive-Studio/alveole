@@ -1,4 +1,4 @@
-class BreadcrumbsComponent < ViewComponent::Base
+class BreadcrumbComponent < ViewComponent::Base
   def initialize(label:, url: nil)
     super
 

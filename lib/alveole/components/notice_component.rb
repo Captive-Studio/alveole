@@ -1,9 +1,9 @@
-class FormAlertComponent < ViewComponent::Base
+class NoticeComponent < ViewComponent::Base
   TYPES = %w[notice alert].freeze
   def initialize(title:, messages: [], type: nil)
     super
 
-    @type = type if TYPE.includes?(type)
+    @type = type if TYPES.include?(type)
     @type ||= 'alert'
     @title = title
     @messages = messages

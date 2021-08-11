@@ -7,5 +7,6 @@ class TableColumnComponent < ViewComponent::Base
     @value = value || obj&.send(fieldname)
     @value = ApplicationController.helpers.format_value(@value, options)
     @url = url
+    @options = options
   end
 end

@@ -15,6 +15,13 @@ module Alveole
 
         v
       end
+
+      def label_for(obj, fieldname)
+        return unless obj && fieldname
+
+        return obj.class.human_attribute_name(fieldname) if obj.class.respond_to?(:human_attribute_name)
+        return obj.klass.human_attribute_name(fieldname) if obj.respond_to?(:klass) && obj.klass.respond_to?(:human_attribute_name)
+      end
     end
   end
 end

@@ -7,5 +7,6 @@ class DefinitionComponent < ViewComponent::Base
     @value = value || obj&.send(fieldname)
     @value = ApplicationController.helpers.format_value(@value, options)
     @label = label || ApplicationController.helpers.label_for(obj, fieldname)
+    @options = options
   end
 end
