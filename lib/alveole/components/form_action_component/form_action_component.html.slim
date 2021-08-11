@@ -1,0 +1,4 @@
+- if @submit_form
+  input[type="submit" name="commit" value=@label class='form__action']
+- else
+  = link_to @label, @url, class: 'form__action'
