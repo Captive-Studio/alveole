@@ -1,12 +1,19 @@
 require 'rails/engine'
+require 'view_component/engine'
 
 module Alveole
   # :nodoc:
   class Engine < ::Rails::Engine
     # isolate_namespace Primer::ViewComponents
+
     config.autoload_once_paths = %W[
-      #{root}/lib
+      #{root}/lib/components
+      #{root}/lib/helpers
+      #{root}/lib/javascript
     ]
+
+    config.view_component.preview_paths << "#{Engine.root}/lib/alveole/previews"
+    config.view_component.show_previews_source = true
 
     # config.primer_view_components = ActiveSupport::OrderedOptions.new
 
