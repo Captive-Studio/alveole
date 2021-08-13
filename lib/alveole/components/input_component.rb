@@ -1,5 +1,5 @@
 class InputComponent < ViewComponent::Base
-  def initialize(type:, label: nil,
+  def initialize(type: nil, label: nil,
                  value: nil,
                  form: nil,
                  fieldname: nil,
@@ -13,7 +13,7 @@ class InputComponent < ViewComponent::Base
     @collection = collection
     @options = options
     @options[:value] = value if value
-    @type = type
+    @type = type || :text
     @error = error?
     @error_message = error_message
   end

@@ -1,3 +1,2 @@
 span.breadcrumb
-  = link_to_if @url, @label, @url
-  span.breadcrumb_sep = ' / ' if @url
+  = link_to_if @url, @label, @url, class: 'breadcrumb__link'

@@ -1,14 +1,14 @@
 .input class=(@error ? 'input-error' : '')
-  = @form.label @fieldname, @label, class: 'label'
+  = @form.label @fieldname, @label, class: 'input__label'
   - case @type
     - when :text
-      = @form.text_field @fieldname
+      = @form.text_field @fieldname, @options.merge(class: 'input__input')
     - when :date
-      = @form.text_field @fieldname, @options.merge(class: 'datepicker')
+      = @form.text_field @fieldname, @options.merge(class: 'input__input datepicker')
     - when :select
-      = @form.select @fieldname, @collection, @options
+      = @form.select @fieldname, @collection, options, @options.merge(class: 'input__input')
     - when :file
-      = @form.file_field @fieldname
+      = @form.file_field @fieldname, @options.merge(class: 'input__input')
     - when :text_area
-      = @form.text_area @fieldname, @options
+      = @form.text_area @fieldname, @options.merge(class: 'input__input')
     .input__errors = @error_message if @error

@@ -6,6 +6,7 @@ class DefinitionComponent < ViewComponent::Base
     @fieldname = fieldname
     @value = value || obj&.send(fieldname)
     @value = ApplicationController.helpers.format_value(@value, options)
+    @value = '---' if @value.blank?
     @label = label || ApplicationController.helpers.label_for(obj, fieldname)
     @options = options
   end
