@@ -1,4 +1,4 @@
-.input class=(@error ? 'input-error' : '')
+.input class=@modifiers.map{|m|"input--#{m}"}
   = @form.label @fieldname, @label, class: 'input__label'
   - case @type
     - when :text

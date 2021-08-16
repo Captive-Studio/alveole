@@ -16,6 +16,19 @@ class InputComponent < ViewComponent::Base
     @type = type || :text
     @error = error?
     @error_message = error_message
+    @disabled = options[:disabled]
+
+    @modifiers = modifiers
+  end
+
+  def modifiers
+    return @modifiers unless @modifiers.nil?
+
+    @modifiers = []
+    @modifiers << :error if @error
+    @modifiers << :disabled if @disabled
+
+    @modifiers
   end
 
   private
