@@ -8,4 +8,8 @@ class BreadcrumbComponentPreview < ViewComponent::Preview
   def without_url
     render(BreadcrumbComponent.new(label: 'Example Breadcrumb'))
   end
+
+  def breadcrumbs
+    render(BreadcrumbsComponent.new)
+  end
 end
