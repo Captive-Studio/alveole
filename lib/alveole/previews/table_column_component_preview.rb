@@ -20,12 +20,12 @@ class TableColumnComponentPreview < ViewComponent::Preview
   end
 
   def with_date
-    temp_obj = TempObj.new(Date.today)
+    temp_obj = TempObj.new(Time.zone.today)
     render(TableColumnComponent.new(value: nil, obj: temp_obj, fieldname: :fieldname, url: 'example/url', options: { date: true }))
   end
 
   def with_time
-    temp_obj = TempObj.new(Time.now)
+    temp_obj = TempObj.new(Time.zone.now)
     render(TableColumnComponent.new(value: nil, obj: temp_obj, fieldname: :fieldname, url: 'example/url', options: { time: true }))
   end
 

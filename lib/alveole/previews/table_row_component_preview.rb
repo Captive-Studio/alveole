@@ -4,15 +4,15 @@ class TableRowComponentPreview < ViewComponent::Preview
   def default
     render(TableRowComponent.new) do |tablerow|
       tablerow.actions do
-        content_tag(:td, 'Example actions')
+        tag.td('Example actions')
       end
-      content_tag(:td, 'Example content')
+      tag.td('Example content')
     end
   end
 
   def without_actions
     render(TableRowComponent.new) do |_tablerow|
-      content_tag(:td, 'Example content')
+      tag.td('Example content')
     end
   end
 end

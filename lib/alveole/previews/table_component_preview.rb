@@ -4,9 +4,9 @@ class TableComponentPreview < ViewComponent::Preview
   def default
     render(TableComponent.new) do |table|
       table.headers do
-        content_tag(:th, 'Example header')
+        tag.th('Example header')
       end
-      content_tag(:tr, content_tag(:td, 'Example column'))
+      tag.tr(tag.td('Example column'))
     end
   end
 end

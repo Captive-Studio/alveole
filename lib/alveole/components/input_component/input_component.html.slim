@@ -1,14 +1,17 @@
-.input class=@modifiers.map{|m|"input--#{m}"}
+.input class=(@modifiers.map{ |modifier| "input--#{modifier}" })
   = @form.label @fieldname, @label, class: 'input__label'
   - case @type
     - when :text
       = @form.text_field @fieldname, @options.merge(class: 'input__input')
     - when :date
       = @form.text_field @fieldname, @options.merge(class: 'input__input datepicker')
+    - when :color
+      = @form.color_field @fieldname, @options
     - when :select
-      = @form.select @fieldname, @collection, options, @options.merge(class: 'input__input')
+      = @form.select @fieldname, @collection, @options, @options.merge(class: 'input__input')
     - when :file
       = @form.file_field @fieldname, @options.merge(class: 'input__input')
     - when :text_area
       = @form.text_area @fieldname, @options.merge(class: 'input__input')
-    .input__errors = @error_message if @error
+    - if @error
+      .input__errors = @error_message

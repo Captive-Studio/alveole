@@ -4,30 +4,30 @@ class PageComponentPreview < ViewComponent::Preview
   def default
     render(PageComponent.new) do |page|
       page.actions do
-        content_tag(:span, 'Example actions')
+        tag.span('Example actions')
       end
       page.header do
-        content_tag(:span, 'Example header')
+        tag.span('Example header')
       end
-      content_tag(:span, 'Example content')
+      tag.span('Example content')
     end
   end
 
   def without_actions
     render(PageComponent.new) do |page|
       page.header do
-        content_tag(:span, 'Example header')
+        tag.span('Example header')
       end
-      content_tag(:span, 'Example content')
+      tag.span('Example content')
     end
   end
 
   def without_header
     render(PageComponent.new) do |page|
       page.actions do
-        content_tag(:span, 'Example actions')
+        tag.span('Example actions')
       end
-      content_tag(:span, 'Example content')
+      tag.span('Example content')
     end
   end
 end
