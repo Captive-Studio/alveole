@@ -1,4 +1,4 @@
-.input class=(@modifiers.map{ |modifier| "input--#{modifier}" })
+.input class=@bem_classes
   = @form.label @fieldname, @label, class: 'input__label'
   - case @type
     - when :text
@@ -13,5 +13,5 @@
       = @form.file_field @fieldname, @options.merge(class: 'input__input')
     - when :text_area
       = @form.text_area @fieldname, @options.merge(class: 'input__input')
-    - if @error
+    - if @error_message
       .input__errors = @error_message

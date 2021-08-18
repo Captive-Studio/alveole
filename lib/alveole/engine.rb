@@ -7,6 +7,7 @@ module Alveole
     # isolate_namespace Primer::ViewComponents
 
     config.autoload_once_paths = %W[
+      #{root}/lib/alveole/concerns
       #{root}/lib/alveole/components
       #{root}/lib/alveole/helpers
       #{root}/lib/alveole/javascript

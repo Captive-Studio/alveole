@@ -1,9 +1,13 @@
 module Alveole
   module Helper
     module ComponentHelper
-      def component(name, args = {}, &block)
+      def component(name, *args, &block)
+        component_args = {}
+        component_args = args.pop if args[-1].is_a? Hash
+        component_args[:modifiers] = args unless args.empty?
         component_class = "#{name}_component".camelize.constantize
-        render(component_class.new(**args), &block)
+
+        render(component_class.new(**component_args), &block)
       end
 
       def format_value(value, options = {})
