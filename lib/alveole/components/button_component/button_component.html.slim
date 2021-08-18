@@ -1,2 +1,5 @@
-.button
-  = link_to @label, @url, @options
+= link_to @url, @options.merge(class: ['button'] + @bem_classes) do
+  - if @icon
+    i.button__icon { class=@icon }
+  - unless @modifiers.include? :icon_only
+    span.button__label = @label

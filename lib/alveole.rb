@@ -2,8 +2,8 @@ require 'rails'
 require 'view_component'
 
 require 'alveole/version'
+require 'alveole/concerns/bem'
 require 'alveole/helpers/method_helper'
-require 'alveole/components/button_component'
 
 if defined? ::Rails::Railtie
   # require 'alveole/railtie'

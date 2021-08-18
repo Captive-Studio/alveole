@@ -1,0 +1,6 @@
+.avatar *@options
+  - if @url
+    = link_to(@url)
+      .avatar__content style="background-image: url(#{@image})"
+  - else
+    .avatar__content style="background-image: url(#{@image})"

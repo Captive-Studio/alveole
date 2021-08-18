@@ -1,9 +1,14 @@
 class InputComponent < ViewComponent::Base
-  def initialize(type:, label: nil,
+  include Alveole::Concerns::Bem
+
+  MODIFIERS = %i[disabled error].freeze
+
+  def initialize(type: nil, label: nil,
                  value: nil,
                  form: nil,
                  fieldname: nil,
                  collection: nil,
+                 modifiers: [],
                  options: {})
     super
 
@@ -13,9 +18,12 @@ class InputComponent < ViewComponent::Base
     @collection = collection
     @options = options
     @options[:value] = value if value
-    @type = type
-    @error = error?
+    @type = type || :text
     @error_message = error_message
+
+    modifiers << :error if error?
+    modifiers << :disabled if options[:disabled]
+    self.modifiers = modifiers
   end
 
   private
