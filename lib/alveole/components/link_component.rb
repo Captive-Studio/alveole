@@ -1,7 +1,7 @@
-class ButtonComponent < ViewComponent::Base
+class LinkComponent < ViewComponent::Base
   include Alveole::Concerns::Bem
 
-  MODIFIERS = %i[small icon_only primary].freeze
+  MODIFIERS = %i[icon_only].freeze
 
   def initialize(url:, label:, icon: nil, modifiers: [], options: {})
     super
