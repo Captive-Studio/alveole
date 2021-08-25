@@ -3,16 +3,7 @@ class TableRowComponentPreview < ViewComponent::Preview
   layout false
 
   def default
-    component :table_row do |tablerow|
-      tablerow.actions do
-        tag.td('Example actions')
-      end
-      tag.td('Example content')
-    end
-  end
-
-  def without_actions
-    component :table_row do |_tablerow|
+    component :table_row do
       tag.td('Example content')
     end
   end
