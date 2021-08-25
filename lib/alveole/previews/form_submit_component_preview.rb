@@ -1,7 +1,8 @@
 class FormSubmitComponentPreview < ViewComponent::Preview
+  include Alveole::Helper::ComponentHelper
   layout false
 
   def default
-    render(FormSubmitComponent.new(label: 'Example label'))
+    component :form_submit, label: 'Example label'
   end
 end

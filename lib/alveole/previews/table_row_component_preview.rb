@@ -1,8 +1,9 @@
 class TableRowComponentPreview < ViewComponent::Preview
+  include Alveole::Helper::ComponentHelper
   layout false
 
   def default
-    render(TableRowComponent.new) do |tablerow|
+    component :table_row do |tablerow|
       tablerow.actions do
         tag.td('Example actions')
       end
@@ -11,7 +12,7 @@ class TableRowComponentPreview < ViewComponent::Preview
   end
 
   def without_actions
-    render(TableRowComponent.new) do |_tablerow|
+    component :table_row do |_tablerow|
       tag.td('Example content')
     end
   end

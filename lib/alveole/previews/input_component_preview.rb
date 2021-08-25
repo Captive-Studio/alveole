@@ -11,6 +11,7 @@ class InputComponentPreview < ViewComponent::Preview
     end
   end
 
+  include Alveole::Helper::ComponentHelper
   layout false
 
   def default

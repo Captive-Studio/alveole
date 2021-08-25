@@ -1,8 +1,9 @@
 class PageComponentPreview < ViewComponent::Preview
+  include Alveole::Helper::ComponentHelper
   layout false
 
   def default
-    render(PageComponent.new) do |page|
+    component :page do |page|
       page.actions do
         tag.span('Example actions')
       end
@@ -14,7 +15,7 @@ class PageComponentPreview < ViewComponent::Preview
   end
 
   def without_actions
-    render(PageComponent.new) do |page|
+    component :page do |page|
       page.header do
         tag.span('Example header')
       end
@@ -23,7 +24,7 @@ class PageComponentPreview < ViewComponent::Preview
   end
 
   def without_header
-    render(PageComponent.new) do |page|
+    component :page do |page|
       page.actions do
         tag.span('Example actions')
       end
