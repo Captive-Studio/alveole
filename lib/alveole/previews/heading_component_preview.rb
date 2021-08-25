@@ -2,10 +2,14 @@ class HeadingComponentPreview < ViewComponent::Preview
   layout false
 
   def default
-    render(HeadingComponent.new(heading: 'Example heading', sub: 'Example sub title'))
+    render(HeadingComponent.new(label: 'Example heading'))
   end
 
-  def without_sub
-    render(HeadingComponent.new(heading: 'Example heading', sub: nil))
+  def with_level
+    render(HeadingComponent.new(label: 'Example heading', level: 2))
+  end
+
+  def with_sub
+    render(HeadingComponent.new(label: 'Example subheading', modifiers: [:sub]))
   end
 end
