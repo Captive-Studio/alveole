@@ -1,12 +1,14 @@
 class NoticeComponent < ViewComponent::Base
-  TYPES = %w[notice alert].freeze
-  def initialize(title:, messages: [], type: nil)
+  include Alveole::Concerns::Bem
+
+  MODIFIERS = [:alert].freeze
+
+  def initialize(title:, messages: [], type: nil, modifiers: [], options: {})
     super
 
-    @type = type if TYPES.include?(type)
-    @type ||= 'alert'
     @title = title
     @messages = messages
+    self.modifiers = modifiers
   end
 
   def render?

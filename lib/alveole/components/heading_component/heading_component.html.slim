@@ -1,4 +1,3 @@
-h1.heading
-  = @heading
+= content_tag(@tag_name, class: ['heading'] + @bem_classes)
+  = @label
   = content
-h2.heading--sub = @sub

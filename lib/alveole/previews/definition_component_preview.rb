@@ -1,4 +1,5 @@
 class DefinitionComponentPreview < ViewComponent::Preview
+  include Alveole::Helper::ComponentHelper
   class TempObj
     def self.human_attribute_name(_)
       'label'
@@ -13,21 +14,21 @@ class DefinitionComponentPreview < ViewComponent::Preview
 
   def default
     temp_obj = TempObj.new
-    render(DefinitionComponent.new(label: nil, value: nil, obj: temp_obj, fieldname: :fieldname, options: {}))
+    component :definition, label: nil, value: nil, obj: temp_obj, fieldname: :fieldname, options: {}
   end
 
   def with_label
     temp_obj = TempObj.new
-    render(DefinitionComponent.new(label: 'custom label', value: nil, obj: temp_obj, fieldname: :fieldname, options: {}))
+    component :definition, label: 'custom label', value: nil, obj: temp_obj, fieldname: :fieldname, options: {}
   end
 
   def with_value
     temp_obj = TempObj.new
-    render(DefinitionComponent.new(label: nil, value: 'custom value', obj: temp_obj, fieldname: :fieldname, options: {}))
+    component :definition, label: nil, value: 'custom value', obj: temp_obj, fieldname: :fieldname, options: {}
   end
 
   def with_options
     temp_obj = TempObj.new
-    render(DefinitionComponent.new(label: nil, value: nil, obj: temp_obj, fieldname: :fieldname, options: { style: 'color:red' }))
+    component :definition, label: nil, value: nil, obj: temp_obj, fieldname: :fieldname, options: { style: 'color:red' }
   end
 end

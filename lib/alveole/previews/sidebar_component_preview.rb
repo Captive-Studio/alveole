@@ -1,8 +1,9 @@
 class SidebarComponentPreview < ViewComponent::Preview
+  include Alveole::Helper::ComponentHelper
   layout false
 
   def default
-    render(SidebarComponent.new) do |sidebar|
+    component :sidebar do |sidebar|
       sidebar.top do
         tag.span('Example top')
       end
@@ -14,7 +15,7 @@ class SidebarComponentPreview < ViewComponent::Preview
   end
 
   def without_top
-    render(SidebarComponent.new) do |sidebar|
+    component :sidebar do |sidebar|
       sidebar.bottom do
         tag.span('Example bottom')
       end
@@ -23,7 +24,7 @@ class SidebarComponentPreview < ViewComponent::Preview
   end
 
   def without_bottom
-    render(SidebarComponent.new) do |sidebar|
+    component :sidebar do |sidebar|
       sidebar.top do
         tag.span('Example top')
       end

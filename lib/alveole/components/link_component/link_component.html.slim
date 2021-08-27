@@ -1,0 +1,5 @@
+= link_to @url, @options.merge(class: ['link'] + @bem_classes) do
+  - if @icon
+    i.link__icon { class=@icon }
+  - unless @modifiers.include? :icon_only
+    span.link__label = @label

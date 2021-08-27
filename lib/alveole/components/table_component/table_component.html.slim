@@ -2,6 +2,9 @@ table.table
   thead
     tr
       = headers
-      th
   tbody
     = content
+  - if footers
+    tfoot
+      tr
+        = footers

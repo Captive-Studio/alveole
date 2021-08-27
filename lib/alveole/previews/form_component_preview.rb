@@ -1,4 +1,5 @@
 class FormComponentPreview < ViewComponent::Preview
+  include Alveole::Helper::ComponentHelper
   layout false
 
   def default

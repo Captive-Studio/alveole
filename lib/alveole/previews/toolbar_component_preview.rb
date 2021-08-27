@@ -1,8 +1,9 @@
 class ToolbarComponentPreview < ViewComponent::Preview
+  include Alveole::Helper::ComponentHelper
   layout false
 
   def default
-    render(ToolbarComponent.new) do |toolbar|
+    component :toolbar do |toolbar|
       toolbar.left do
         tag.span('Example left')
       end
@@ -14,7 +15,7 @@ class ToolbarComponentPreview < ViewComponent::Preview
   end
 
   def without_left
-    render(ToolbarComponent.new) do |toolbar|
+    component :toolbar do |toolbar|
       toolbar.right do
         tag.span('Example right')
       end
@@ -23,7 +24,7 @@ class ToolbarComponentPreview < ViewComponent::Preview
   end
 
   def without_right
-    render(ToolbarComponent.new) do |toolbar|
+    component :toolbar do |toolbar|
       toolbar.left do
         tag.span('Example left')
       end

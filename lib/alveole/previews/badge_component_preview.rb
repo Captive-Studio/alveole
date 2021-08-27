@@ -1,11 +1,12 @@
 class BadgeComponentPreview < ViewComponent::Preview
+  include Alveole::Helper::ComponentHelper
   layout false
 
   def default
-    render(BadgeComponent.new(label: 'example de badge'))
+    component :badge, label: 'example de badge'
   end
 
   def with_options
-    render(BadgeComponent.new(label: 'example de badge', options: { data: 'example-option' }))
+    component :badge, label: 'example de badge', options: { data: 'example-option' }
   end
 end

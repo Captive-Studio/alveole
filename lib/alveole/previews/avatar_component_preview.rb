@@ -1,11 +1,12 @@
 class AvatarComponentPreview < ViewComponent::Preview
+  include Alveole::Helper::ComponentHelper
   layout false
 
   def default
-    render(AvatarComponent.new(image: '/example/image', url: '/example/url'))
+    component :avatar, image: '/example/image', url: '/example/url'
   end
 
   def without_url
-    render(AvatarComponent.new(image: '/example/image'))
+    component :avatar, image: '/example/image'
   end
 end
