@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     alveole (0.1.0)
+      inline_svg (>= 1.5.0)
       rails (>= 6.0)
       view_component (>= 3.0)
 
@@ -97,6 +98,9 @@ GEM
       activesupport (>= 6.1)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
+    inline_svg (1.9.0)
+      activesupport (>= 3.0)
+      nokogiri (>= 1.6)
     io-console (0.7.1)
     irb (1.11.1)
       rdoc
@@ -223,6 +227,7 @@ DEPENDENCIES
   rspec-rails
   sprockets-rails
   sqlite3
+  view_component
 
 BUNDLED WITH
    2.4.22
