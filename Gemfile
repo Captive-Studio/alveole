@@ -14,3 +14,9 @@ gem "view_component"
 
 # Start debugger with binding.b [https://github.com/ruby/debug]
 # gem "debug", ">= 1.0.0"
+
+group :development do
+  gem "lookbook", ">= 2.2.0"
+  gem "listen"
+  gem "actioncable"
+end
