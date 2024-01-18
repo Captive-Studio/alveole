@@ -23,8 +23,11 @@ Gem::Specification.new do |spec|
   end
 
   spec.add_dependency "rails", ">= 6.0"
+  spec.add_dependency "importmap-rails"
+  spec.add_dependency "tailwindcss-rails"
   spec.add_dependency "view_component", ">= 3.0"
   spec.add_dependency "inline_svg", ">= 1.5.0"
+
 
   spec.add_development_dependency "rspec-rails"
 end

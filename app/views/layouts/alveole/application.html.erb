@@ -6,6 +6,19 @@
   <%= csp_meta_tag %>
 
   <%= stylesheet_link_tag    "alveole/application", media: "all" %>
+  <%= stylesheet_link_tag "alveole", "data-turbo-track": "reload" %>
+
+  <!--
+    NOTE: This loads/imports main app `application.js` and all the pins from
+          the main app and from the engine (because we set it up in the engine.rb).
+  -->
+  <%= javascript_importmap_tags %>
+
+  <!--
+    NOTE: To add engine's javascript functionality we have to load the
+          entrypoint here or `import` it in the main app `application.js`
+  -->
+  <%= javascript_import_module_tag "alveole/application" %>
 </head>
 <body>
 
