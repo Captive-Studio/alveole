@@ -1,9 +1,8 @@
 # frozen_string_literal: true
 
 class Alveole::ChipComponent < ViewComponent::Base
-  def initialize(label:, outline: false, color: :default, size: :sm)
+  def initialize(label:, color: :default, size: :sm)
     @label = label
-    @outline = outline
     @color = color
     @class_color = CLASS_COLOR[color.to_sym]
     @class_size = CLASS_SIZE[size.to_sym]

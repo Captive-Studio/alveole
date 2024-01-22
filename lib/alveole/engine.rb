@@ -1,4 +1,5 @@
 require "importmap-rails"
+require "view_component"
 
 module Alveole
   class Engine < ::Rails::Engine
