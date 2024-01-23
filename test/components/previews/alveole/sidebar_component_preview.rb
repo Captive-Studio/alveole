@@ -2,12 +2,13 @@
 
 class Alveole::SidebarComponentPreview < Lookbook::Preview
   def default
-    render(Alveole::SidebarComponent.new) do
-      render(Alveole::SidebarItemComponent.new(title: "Dashboard", url: "#"))
-      render(Alveole::SidebarItemComponent.new(title: "Users", url: "#"))
-      render(Alveole::SidebarItemComponent.new(title: "Guides", url: "#"))
-      render(Alveole::SidebarGroupComponent.new(title: "Customization")) do
-        render(Alveole::SidebarItemComponent.new(title: "Settings", url: "#"))
+    render(Alveole::SidebarComponent.new) do |sidebar|
+      sidebar.with_heading title: "Mon site"
+      sidebar.with_item title: "Dashboard", href: "#"
+      sidebar.with_item title: "Users", href: "#"
+      sidebar.with_item title: "Guides", href: "#"
+      sidebar.with_group title: "Customization" do |group|
+        group.with_item title: "Settings", href: "#"
       end
     end
   end

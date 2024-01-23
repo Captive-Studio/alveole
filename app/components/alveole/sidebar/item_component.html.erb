@@ -1,0 +1,14 @@
+<alv-sidebar-item class="block">
+  <% class_if_active = @current ? "bg-gray-50 text-primary-600" : "text-gray-600 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700" %>
+  <%= link_to @href, class: "#{class_if_active} flex items-center px-3 py-2 transition-colors duration-300 transform rounded-lg" do %>
+    <% if content.present? %>
+      <%= content %>
+    <% else %>
+      <% if @icon %>
+        <%= render(IconComponent.new(@icon, class: "w-5 h-5")) %>
+      <% end %>
+
+      <span class="mx-2 text-sm font-medium"><%= @title %></span>
+    <% end %>
+  <% end %>
+</alv-sidebar-item>

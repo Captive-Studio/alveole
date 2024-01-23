@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
-class Alveole::SidebarComponent < ViewComponent::Base
-  renders_one :heading, Alveole::Sidebar::HeadingComponent
+class Alveole::Sidebar::GroupComponent < ViewComponent::Base
 
   renders_many :items, types: {
     item: {
@@ -32,9 +31,7 @@ class Alveole::SidebarComponent < ViewComponent::Base
     }
   }
 
-
-  def initialize(logo: nil, logo_url: nil)
-    @logo = logo
-    @logo_url = logo_url
+  def initialize(title:)
+    @title = title
   end
 end
