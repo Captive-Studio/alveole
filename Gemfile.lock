@@ -1,4 +1,10 @@
 PATH
+  remote: ../arriere-boutique-autourl
+  specs:
+    arriere-boutique-autourl (0.1.0)
+      rails (>= 6.0)
+
+PATH
   remote: .
   specs:
     alveole (0.1.0)
@@ -261,6 +267,7 @@ PLATFORMS
 DEPENDENCIES
   actioncable
   alveole!
+  arriere-boutique-autourl!
   listen
   lookbook (>= 2.2.0)
   puma

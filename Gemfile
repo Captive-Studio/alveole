@@ -12,6 +12,8 @@ gem "sprockets-rails"
 
 gem "view_component"
 
+gem "arriere-boutique-autourl", path: "../arriere-boutique-autourl"
+
 # Start debugger with binding.b [https://github.com/ruby/debug]
 # gem "debug", ">= 1.0.0"
 
