@@ -33,5 +33,7 @@ $ bundle
 ## Contributing
 Contribution directions go here.
 
+Pour lancer le projet, il faut utiliser la commande `bin/rails app:tailwind_engine_watch` pour compiler le css
+
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-class FormLayoutComponentPreview < ViewComponent::Preview
+class Alveole::FormLayoutComponentPreview < Lookbook::Preview
   def default
-    render(FormLayoutComponent.new)
+    render(Alveole::FormLayoutComponent.new)
   end
 end

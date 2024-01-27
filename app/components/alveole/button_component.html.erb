@@ -1,0 +1,10 @@
+<alv-button class="inline-flex">
+  <%= link_to(@href, class: "flex items-center justify-center w-1/2 px-5 py-2 text-sm transition-colors duration-200 border rounded-md sm:w-auto gap-x-2 #{@class_color}") do %>
+    <% if @icon %>
+      <%= render(@icon) %>
+      <span><%= content %></span>
+    <% else %>
+      <% content %>
+    <% end %>
+  <% end %>
+</alv-button>
