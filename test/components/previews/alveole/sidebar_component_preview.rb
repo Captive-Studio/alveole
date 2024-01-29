@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class Alveole::SidebarComponentPreview < Lookbook::Preview
+  # @display bg_color bg-slate-50
   def default
     render(Alveole::SidebarComponent.new) do |sidebar|
       sidebar.with_heading title: "Mon site"
