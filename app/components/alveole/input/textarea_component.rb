@@ -1,4 +1,4 @@
 # frozen_string_literal: true
 
-class Alveole::Input::TextareaComponent < Input::BaseComponent
+class Alveole::Input::TextareaComponent < Alveole::Input::BaseComponent
 end

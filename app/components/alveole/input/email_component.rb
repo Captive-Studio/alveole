@@ -1,4 +1,4 @@
 # frozen_string_literal: true
 
-class Alveole::Input::EmailComponent < Input::BaseComponent
+class Alveole::Input::EmailComponent < Alveole::Input::BaseComponent
 end
