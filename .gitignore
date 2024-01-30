@@ -12,5 +12,6 @@
 node_modules/
 
 /vendor/bundle/
+/vendor/javascript/
 .keep
 app/assets/builds/alveole.css
