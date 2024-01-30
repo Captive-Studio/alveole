@@ -13,7 +13,7 @@ class Alveole::ButtonComponent < ViewComponent::Base
       base: "border",
       colors: {
         primary: "text-gray-700 bg-white hover:bg-gray-100 dark:bg-gray-900 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800",
-        green: "text-gray-500 border-green-500 bg-white hover:bg-gray-100 dark:bg-gray-900 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800",
+        green: "text-gray-700 border-green-500 bg-white hover:bg-gray-100 dark:bg-gray-900 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800",
       }
     },
     tertiary: {
