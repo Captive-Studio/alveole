@@ -1,5 +1,9 @@
 {
   "dependencies": {
+    "esbuild-rails": "^1.0.7",
     "flowbite": "^2.2.1"
+  },
+  "scripts": {
+    "build": "node esbuild.config.js"
   }
 }
