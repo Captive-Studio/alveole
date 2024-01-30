@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+cd spec/dummy/
+
+BLUE='\033[0;34m'
+NC='\033[0m' # No Color
+
+echo "Go to ${BLUE}http://localhost:3001/lookbook${NC}\n"
+rails s -p 3001
