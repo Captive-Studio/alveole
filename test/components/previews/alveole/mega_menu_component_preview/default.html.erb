@@ -6,6 +6,8 @@
     <%= render(Alveole::ButtonComponent.new(type: :tertiary, color: :dark)) do %>
       Login
     <% end %>
+  <% end %>
+  <% mega_menu.with_action do %>
     <%= render(Alveole::ButtonComponent.new(type: :primary)) do %>
       Sign up
     <% end %>

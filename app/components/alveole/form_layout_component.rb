@@ -20,7 +20,6 @@ class Alveole::FormLayoutComponent < ViewComponent::Base
     file: Alveole::Input::FileComponent,
   }
   def input(attribute, **args)
-    p args
     input_component = input_component(attribute, args[:as])
     render(input_component.new(@f, attribute, args))
   end
@@ -29,7 +28,7 @@ class Alveole::FormLayoutComponent < ViewComponent::Base
   
   def input_component(attribute, as)
     as ||= default_input_type(attribute, as)
-    
+
     INPUT_CLASS[as].presence || Input::TextComponent
   end
 
