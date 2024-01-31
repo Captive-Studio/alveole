@@ -10,7 +10,7 @@ class Alveole::ButtonComponentPreview < Lookbook::Preview
   #
   # In summary, the strategic use of primary, secondary, and tertiary buttons in UX design guides users effectively, highlighting key actions while offering alternative choices and additional options in an organized and accessible manner.
   #
-  # @param color select { choices: [primary,green] }
+  # @param color select { choices: [primary,green,dark] }
   # @param href text
   # @param disabled toggle
   # @!group Colors
