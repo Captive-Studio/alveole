@@ -18,14 +18,16 @@ class Alveole::FormLayoutComponent < ViewComponent::Base
     comment: Alveole::Input::CommentComponent,
     avatar: Alveole::Input::AvatarComponent,
     file: Alveole::Input::FileComponent,
+    counter: Alveole::Input::CounterComponent,
+    select: Alveole::Input::SelectComponent,
   }
   def input(attribute, **args)
     input_component = input_component(attribute, args[:as])
     render(input_component.new(@f, attribute, args))
   end
-  
+
   private
-  
+
   def input_component(attribute, as)
     as ||= default_input_type(attribute, as)
 
@@ -35,6 +37,7 @@ class Alveole::FormLayoutComponent < ViewComponent::Base
   def default_input_type(attribute, as)
     as = :avatar if attribute.to_sym == :avatar
     as = :email if attribute.to_sym == :email
+    as = :counter if [:quantity].include?(attribute.to_sym)
     as ||= :string
   end
 end
