@@ -42,6 +42,7 @@ module Dummy
     config.generators.system_tests = nil
 
     config.view_component.default_preview_layout = "component_preview"
+    config.view_component.preview_paths << "#{Rails.root}/../../test/components/previews"
     config.lookbook.preview_paths = [Rails.root.join("../../test/components/previews")]
   end
 end
