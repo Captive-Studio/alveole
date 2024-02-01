@@ -1,5 +1,10 @@
-// do some javascript
 import 'flowbite';
-// import 'flowbite-datepicker';
+import 'flowbite-datepicker';
 
-console.log("hi, again");
+import SlimSelect from 'slim-select';
+
+console.log("Alveole load !");
+
+new SlimSelect({
+  select: 'select'
+})
