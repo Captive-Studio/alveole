@@ -34,8 +34,8 @@ class Alveole::AlertComponentPreview < ViewComponent::Preview
   end
   # @!endgroup
 
-  def with_dissmiss(dismiss: true)
-    render(Alveole::AlertComponent.new(type: :info, dismiss: dismiss)) do
+  def with_dissmiss
+    render(Alveole::AlertComponent.new(type: :info, dismiss: true)) do
       "A simple info alert."
     end
   end
