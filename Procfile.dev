@@ -1,0 +1,3 @@
+web: bin/lookbook_server
+# js: yarn build --watch
+css: rake app:tailwind_engine_watch

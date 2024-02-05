@@ -1,9 +1,8 @@
 #!/usr/bin/env sh
 
-cd spec/dummy/
+if ! gem list foreman -i --silent; then
+  echo "Installing foreman..."
+  gem install foreman
+fi
 
-BLUE='\033[0;34m'
-NC='\033[0m' # No Color
-
-echo "Go to ${BLUE}http://localhost:3001/lookbook${NC}\n"
-rails s -p 3001
+exec foreman start -f Procfile.dev "$@"

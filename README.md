@@ -33,7 +33,13 @@ $ bundle
 ## Contributing
 Contribution directions go here.
 
-Pour lancer le projet, il faut utiliser la commande `bin/rails app:tailwind_engine_watch` pour compiler le css
+If you want to launch the project locally, you can use the command : 
+
+```console
+bin/dev
+```
+
+This command will launch Lookbook and compile css (tailwind classes)
 
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
