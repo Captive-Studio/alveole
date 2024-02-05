@@ -10,7 +10,7 @@ class Alveole::ButtonComponentPreview < Lookbook::Preview
   #
   # In summary, the strategic use of primary, secondary, and tertiary buttons in UX design guides users effectively, highlighting key actions while offering alternative choices and additional options in an organized and accessible manner.
   #
-  # @param color select { choices: [primary,green,dark] }
+  # @param color select { choices: [primary,green,red,yellow,dark] }
   # @param href text
   # @param disabled toggle
   # @!group Colors
@@ -48,4 +48,17 @@ class Alveole::ButtonComponentPreview < Lookbook::Preview
     end
   end
   # @!endgroup
+
+  def with_icon(color: :dark, href: "#", disabled: false)
+    render(Alveole::ButtonComponent.new(
+      type: :tertiary,
+      color: color,
+      href: href,
+      disabled: disabled
+    )) do |_b|
+      '<svg xmlns="http://www.w3.org/2000/svg" fill="none" class="h-6 w-6" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+</svg>'.html_safe
+    end
+  end
 end
