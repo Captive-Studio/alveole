@@ -1,7 +1,7 @@
-import 'flowbite';
-import 'flowbite-datepicker';
+console.log("start loading")
 
-import SlimSelect from 'slim-select';
+import { initializeInputPassword } from './input/password.js';
+initializeInputPassword()
 
 console.log("Alveole load !");
 
