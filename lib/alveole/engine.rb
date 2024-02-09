@@ -1,5 +1,6 @@
 require "importmap-rails"
 require "view_component"
+require "simple_form"
 
 module Alveole
   class Engine < ::Rails::Engine
