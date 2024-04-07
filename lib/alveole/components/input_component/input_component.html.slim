@@ -3,6 +3,8 @@
   - case @type
     - when :text
       = @form.text_field @fieldname, @options.merge(class: 'input__input')
+    - when :email
+      = @form.email_field @fieldname, @options.merge(class: 'input__input')
     - when :date
       = @form.text_field @fieldname, @options.merge(class: 'input__input datepicker')
     - when :color
