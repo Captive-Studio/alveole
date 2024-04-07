@@ -6,3 +6,11 @@
 /pkg/
 /spec/reports/
 /tmp/
+
+node_modules/
+
+/vendor/bundle/
+/vendor/javascript/
+spec/dummy/vendor/
+.keep
+app/assets/builds/alveole.css
