@@ -1,0 +1,34 @@
+{
+  "name": "alveole",
+  "version": "1.0.0",
+  "description": "Librairie CSS/SCSS modulaire et versionnée",
+  "main": "dist/alveole.css",
+  "style": "dist/alveole.css",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "npm run build:css && npm run build:minify",
+    "build:css": "sass src/_index.scss dist/alveole.css --no-source-map",
+    "build:minify": "sass src/_index.scss dist/alveole.min.css --no-source-map --style=compressed",
+    "watch": "sass --watch src/_index.scss dist/alveole.css",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "design-system",
+    "components",
+    "utilities"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.77.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}

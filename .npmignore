@@ -1,0 +1,27 @@
+# Sources
+src/
+*.scss
+!dist/**/*.css
+
+# Développement
+node_modules/
+.git/
+.gitignore
+.cursor/
+
+# Documentation de développement
+*.md
+!README.md
+
+# Configurations
+.eslintrc*
+.prettierrc*
+tsconfig.json
+sass.config.js
+
+# Autres
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

@@ -1,0 +1,172 @@
+// Variables de couleurs Alveole
+// Définition des couleurs du design system
+
+// White
+$white: #FFFFFF;
+
+// Monza
+$monza-50: #FFF0F2;
+$monza-100: #FFE5E9;
+$monza-200: #FFC1C9;
+$monza-300: #FF95A2;
+$monza-400: #FF596E;
+$monza-500: #FF2641;
+$monza-600: #FC0624;
+$monza-700: #D60019;
+$monza-800: #AF051A;
+$monza-900: #900C1C;
+$monza-950: #50000A;
+
+// Mariner
+$mariner-50: #F1F7FE;
+$mariner-100: #E2EEFC;
+$mariner-200: #BEDDF9;
+$mariner-300: #85C0F4;
+$mariner-400: #44A0EC;
+$mariner-500: #1C85DB;
+$mariner-600: #1070CA;
+$mariner-700: #0D5297;
+$mariner-800: #0F477D;
+$mariner-900: #123C68;
+$mariner-950: #0C2645;
+
+// Watusi
+$watusi-50: #FEF5F2;
+$watusi-100: #FFE9E1;
+$watusi-200: #FFD6C7;
+$watusi-300: #FEBBA3;
+$watusi-400: #FB946E;
+$watusi-500: #F27041;
+$watusi-600: #E05522;
+$watusi-700: #BA461C;
+$watusi-800: #9B3C19;
+$watusi-900: #81361B;
+$watusi-950: #461909;
+
+// Slate Gray
+$slate-gray-1000: #FFFFFFFF;
+$slate-gray-975: #F6FAFAFF;
+$slate-gray-950: #EBF2F4FF;
+$slate-gray-925: #DBE7EAFF;
+$slate-gray-900: #D2DFE4FF;
+$slate-gray-850: #BED1D8FF;
+$slate-gray-625: #8197AAFF;
+$slate-gray-425: #5B6B78FF;
+$slate-gray-200: #323B43FF;
+$slate-gray-175: #2E373EFF;
+$slate-gray-125: #242B31FF;
+$slate-gray-100: #1F242DFF;
+$slate-gray-75: #191E26FF;
+$slate-gray-50: #12161DFF;
+
+// Mountain Meadow
+$mountain-meadow-50: #EFFAF4;
+$mountain-meadow-100: #D7F4E1;
+$mountain-meadow-200: #B3E7C9;
+$mountain-meadow-300: #81D4A9;
+$mountain-meadow-400: #47B881;
+$mountain-meadow-500: #2A9F6A;
+$mountain-meadow-600: #1C7F54;
+$mountain-meadow-700: #166645;
+$mountain-meadow-800: #145139;
+$mountain-meadow-900: #114330;
+$mountain-meadow-950: #09251C;
+
+// Sunshade
+$sunshade-50: #FDF9E9;
+$sunshade-100: #FBF2C6;
+$sunshade-200: #F9E18F;
+$sunshade-300: #F5C94F;
+$sunshade-400: #F0B429;
+$sunshade-500: #DF9913;
+$sunshade-600: #C1750D;
+$sunshade-700: #9A530E;
+$sunshade-800: #7F4214;
+$sunshade-900: #6D3616;
+$sunshade-950: #3F1B09;
+
+// CSS Custom Properties pour les couleurs
+:root {
+  --white: #{$white};
+  
+  // monza
+  --monza-50: #{$monza-50};
+  --monza-100: #{$monza-100};
+  --monza-200: #{$monza-200};
+  --monza-300: #{$monza-300};
+  --monza-400: #{$monza-400};
+  --monza-500: #{$monza-500};
+  --monza-600: #{$monza-600};
+  --monza-700: #{$monza-700};
+  --monza-800: #{$monza-800};
+  --monza-900: #{$monza-900};
+  --monza-950: #{$monza-950};
+
+  // mariner
+  --mariner-50: #{$mariner-50};
+  --mariner-100: #{$mariner-100};
+  --mariner-200: #{$mariner-200};
+  --mariner-300: #{$mariner-300};
+  --mariner-400: #{$mariner-400};
+  --mariner-500: #{$mariner-500};
+  --mariner-600: #{$mariner-600};
+  --mariner-700: #{$mariner-700};
+  --mariner-800: #{$mariner-800};
+  --mariner-900: #{$mariner-900};
+  --mariner-950: #{$mariner-950};
+
+  // watusi
+  --watusi-50: #{$watusi-50};
+  --watusi-100: #{$watusi-100};
+  --watusi-200: #{$watusi-200};
+  --watusi-300: #{$watusi-300};
+  --watusi-400: #{$watusi-400};
+  --watusi-500: #{$watusi-500};
+  --watusi-600: #{$watusi-600};
+  --watusi-700: #{$watusi-700};
+  --watusi-800: #{$watusi-800};
+  --watusi-900: #{$watusi-900};
+  --watusi-950: #{$watusi-950};
+
+  // slate gray
+  --slate-gray-1000: #{$slate-gray-1000};
+  --slate-gray-975: #{$slate-gray-975};
+  --slate-gray-950: #{$slate-gray-950};
+  --slate-gray-925: #{$slate-gray-925};
+  --slate-gray-900: #{$slate-gray-900};
+  --slate-gray-850: #{$slate-gray-850};
+  --slate-gray-625: #{$slate-gray-625};
+  --slate-gray-425: #{$slate-gray-425};
+  --slate-gray-200: #{$slate-gray-200};
+  --slate-gray-175: #{$slate-gray-175};
+  --slate-gray-125: #{$slate-gray-125};
+  --slate-gray-100: #{$slate-gray-100};
+  --slate-gray-75: #{$slate-gray-75};
+  --slate-gray-50: #{$slate-gray-50};
+
+  // mountain meadow
+  --mountain-meadow-50: #{$mountain-meadow-50};
+  --mountain-meadow-100: #{$mountain-meadow-100};
+  --mountain-meadow-200: #{$mountain-meadow-200};
+  --mountain-meadow-300: #{$mountain-meadow-300};
+  --mountain-meadow-400: #{$mountain-meadow-400};
+  --mountain-meadow-500: #{$mountain-meadow-500};
+  --mountain-meadow-600: #{$mountain-meadow-600};
+  --mountain-meadow-700: #{$mountain-meadow-700};
+  --mountain-meadow-800: #{$mountain-meadow-800};
+  --mountain-meadow-900: #{$mountain-meadow-900};
+  --mountain-meadow-950: #{$mountain-meadow-950};
+
+  // sunshade
+  --sunshade-50: #{$sunshade-50};
+  --sunshade-100: #{$sunshade-100};
+  --sunshade-200: #{$sunshade-200};
+  --sunshade-300: #{$sunshade-300};
+  --sunshade-400: #{$sunshade-400};
+  --sunshade-500: #{$sunshade-500};
+  --sunshade-600: #{$sunshade-600};
+  --sunshade-700: #{$sunshade-700};
+  --sunshade-800: #{$sunshade-800};
+  --sunshade-900: #{$sunshade-900};
+  --sunshade-950: #{$sunshade-950};
+}

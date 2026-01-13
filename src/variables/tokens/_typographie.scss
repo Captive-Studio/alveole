@@ -1,0 +1,247 @@
+// Variables de typographie Alveole
+// Définition des polices, tailles, line-heights, etc.
+
+// Font families
+$font-family-fallback: -apple-system, 'Segoe UI', Roboto, 'noto sans', ubuntu, cantarell, 'helvetica neue';
+$font-family-text: 'Inter', $font-family-fallback;
+$font-family-title: 'Inter', $font-family-fallback;
+
+// Font sizes - Titres alternatifs
+$fontsize-titres-alternatifs-xl-desktop: 80px;
+$fontsize-titres-alternatifs-xl-mobile: 72px;
+$fontsize-titres-alternatifs-lg-desktop: 72px;
+$fontsize-titres-alternatifs-lg-mobile: 64px;
+$fontsize-titres-alternatifs-md-desktop: 64px;
+$fontsize-titres-alternatifs-md-mobile: 56px;
+$fontsize-titres-alternatifs-sm-desktop: 56px;
+$fontsize-titres-alternatifs-sm-mobile: 48px;
+$fontsize-titres-alternatifs-xs-desktop: 48px;
+$fontsize-titres-alternatifs-xs-mobile: 40px;
+
+// Font sizes - Titres
+$fontsize-titres-xl-desktop: 40px;
+$fontsize-titres-xl-mobile: 32px;
+$fontsize-titres-lg-desktop: 32px;
+$fontsize-titres-lg-mobile: 28px;
+$fontsize-titres-md-desktop: 28px;
+$fontsize-titres-md-mobile: 24px;
+$fontsize-titres-sm-desktop: 24px;
+$fontsize-titres-sm-mobile: 22px;
+$fontsize-titres-xs-desktop: 22px;
+$fontsize-titres-xs-mobile: 20px;
+$fontsize-titres-xss-desktop: 20px;
+$fontsize-titres-xss-mobile: 18px;
+
+// Font sizes - Corps de texte
+$fontsize-corps-de-texte-xl-regular: 20px;
+$fontsize-corps-de-texte-xl-bold: 20px;
+$fontsize-corps-de-texte-lg-regular: 18px;
+$fontsize-corps-de-texte-lg-medium: 18px;
+$fontsize-corps-de-texte-lg-bold: 18px;
+$fontsize-corps-de-texte-md-regular: 16px;
+$fontsize-corps-de-texte-md-medium: 16px;
+$fontsize-corps-de-texte-md-bold: 16px;
+$fontsize-corps-de-texte-md-italique: 16px;
+$fontsize-corps-de-texte-sm-regular: 14px;
+$fontsize-corps-de-texte-sm-medium: 14px;
+$fontsize-corps-de-texte-sm-bold: 14px;
+$fontsize-corps-de-texte-sm-italique: 14px;
+$fontsize-corps-de-texte-xs-regular: 12px;
+$fontsize-corps-de-texte-xs-bold: 12px;
+$fontsize-corps-de-texte-xs-souligne: 12px;
+$fontsize-corps-de-texte-xs-italique: 12px;
+$fontsize-corps-de-texte-xs-maj: 12px;
+
+// Font sizes - Corps de texte alternatifs
+$fontsize-corps-de-texte-alternatifs-lg-texte-article-regular: 20px;
+$fontsize-corps-de-texte-alternatifs-lg-texte-article-bold: 20px;
+$fontsize-corps-de-texte-alternatifs-md-texte-standard-regular: 16px;
+$fontsize-corps-de-texte-alternatifs-md-texte-standard-bold: 16px;
+$fontsize-corps-de-texte-alternatifs-sm-texte-detail-regular: 14px;
+$fontsize-corps-de-texte-alternatifs-sm-texte-detail-bold: 14px;
+$fontsize-corps-de-texte-alternatifs-xs-texte-mention-regular: 12px;
+
+// Line heights - Titres alternatifs
+$line-height-titres-alternatifs-xl-desktop: 88px;
+$line-height-titres-alternatifs-xl-mobile: 80px;
+$line-height-titres-alternatifs-lg-desktop: 80px;
+$line-height-titres-alternatifs-lg-mobile: 72px;
+$line-height-titres-alternatifs-md-desktop: 72px;
+$line-height-titres-alternatifs-md-mobile: 64px;
+$line-height-titres-alternatifs-sm-desktop: 64px;
+$line-height-titres-alternatifs-sm-mobile: 56px;
+$line-height-titres-alternatifs-xs-desktop: 56px;
+$line-height-titres-alternatifs-xs-mobile: 48px;
+
+// Line heights - Titres
+$line-height-titres-xl-desktop: 48px;
+$line-height-titres-xl-mobile: 40px;
+$line-height-titres-lg-desktop: 40px;
+$line-height-titres-lg-mobile: 36px;
+$line-height-titres-md-desktop: 36px;
+$line-height-titres-md-mobile: 32px;
+$line-height-titres-sm-desktop: 32px;
+$line-height-titres-sm-mobile: 28px;
+$line-height-titres-xs-desktop: 28px;
+$line-height-titres-xs-mobile: 28px;
+$line-height-titres-xss-desktop: 28px;
+$line-height-titres-xss-mobile: 24px;
+
+// Line heights - Corps de texte
+$line-height-corps-de-texte-xl-regular: 32px;
+$line-height-corps-de-texte-xl-bold: 32px;
+$line-height-corps-de-texte-lg-regular: 28px;
+$line-height-corps-de-texte-lg-medium: 28px;
+$line-height-corps-de-texte-lg-bold: 28px;
+$line-height-corps-de-texte-md-regular: 24px;
+$line-height-corps-de-texte-md-medium: 24px;
+$line-height-corps-de-texte-md-bold: 24px;
+$line-height-corps-de-texte-md-italique: 24px;
+$line-height-corps-de-texte-sm-regular: 24px;
+$line-height-corps-de-texte-sm-medium: 24px;
+$line-height-corps-de-texte-sm-bold: 24px;
+$line-height-corps-de-texte-sm-italique: 24px;
+$line-height-corps-de-texte-xs-regular: 20px;
+$line-height-corps-de-texte-xs-bold: 20px;
+$line-height-corps-de-texte-xs-souligne: 20px;
+$line-height-corps-de-texte-xs-italique: 20px;
+$line-height-corps-de-texte-xs-maj: 20px;
+
+// Line heights - Corps de texte alternatifs
+$line-height-corps-de-texte-alternatifs-lg-texte-article-regular: 32px;
+$line-height-corps-de-texte-alternatifs-lg-texte-article-bold: 32px;
+$line-height-corps-de-texte-alternatifs-md-texte-standard-regular: 24px;
+$line-height-corps-de-texte-alternatifs-md-texte-standard-bold: 24px;
+$line-height-corps-de-texte-alternatifs-sm-texte-detail-regular: 24px;
+$line-height-corps-de-texte-alternatifs-sm-texte-detail-bold: 24px;
+$line-height-corps-de-texte-alternatifs-xs-texte-mention-regular: 20px;
+
+// Font weights
+$font-weight-regular: regular;
+$font-weight-medium: 500;
+$font-weight-bold: 600;
+$font-weight-italic: italic;
+
+// CSS Custom Properties pour la typographie
+:root {
+  // font-family
+  --font-family-fallback: #{$font-family-fallback};
+  --font-family-text: #{$font-family-text};
+  --font-family-title: #{$font-family-title};
+
+  // Font sizes - Titres alternatifs
+  --fontsize-Titres-alternatifs-XL-desktop: #{$fontsize-titres-alternatifs-xl-desktop};
+  --fontsize-Titres-alternatifs-XL-mobile: #{$fontsize-titres-alternatifs-xl-mobile};
+  --fontsize-Titres-alternatifs-LG-desktop: #{$fontsize-titres-alternatifs-lg-desktop};
+  --fontsize-Titres-alternatifs-LG-mobile: #{$fontsize-titres-alternatifs-lg-mobile};
+  --fontsize-Titres-alternatifs-MD-desktop: #{$fontsize-titres-alternatifs-md-desktop};
+  --fontsize-Titres-alternatifs-MD-mobile: #{$fontsize-titres-alternatifs-md-mobile};
+  --fontsize-Titres-alternatifs-SM-desktop: #{$fontsize-titres-alternatifs-sm-desktop};
+  --fontsize-Titres-alternatifs-SM-mobile: #{$fontsize-titres-alternatifs-sm-mobile};
+  --fontsize-Titres-alternatifs-XS-desktop: #{$fontsize-titres-alternatifs-xs-desktop};
+  --fontsize-Titres-alternatifs-XS-mobile: #{$fontsize-titres-alternatifs-xs-mobile};
+
+  // Font sizes - Titres
+  --fontsize-Titres-XL-desktop: #{$fontsize-titres-xl-desktop};
+  --fontsize-Titres-XL-mobile: #{$fontsize-titres-xl-mobile};
+  --fontsize-Titres-LG-desktop: #{$fontsize-titres-lg-desktop};
+  --fontsize-Titres-LG-mobile: #{$fontsize-titres-lg-mobile};
+  --fontsize-Titres-MD-desktop: #{$fontsize-titres-md-desktop};
+  --fontsize-Titres-MD-mobile: #{$fontsize-titres-md-mobile};
+  --fontsize-Titres-SM-desktop: #{$fontsize-titres-sm-desktop};
+  --fontsize-Titres-SM-mobile: #{$fontsize-titres-sm-mobile};
+  --fontsize-Titres-XS-desktop: #{$fontsize-titres-xs-desktop};
+  --fontsize-Titres-XS-mobile: #{$fontsize-titres-xs-mobile};
+  --fontsize-Titres-XSS-desktop: #{$fontsize-titres-xss-desktop};
+  --fontsize-Titres-XSS-mobile: #{$fontsize-titres-xss-mobile};
+
+  // Font sizes - Corps de texte
+  --fontsize-Corps-de-texte-XL--regular: #{$fontsize-corps-de-texte-xl-regular};
+  --fontsize-Corps-de-texte-XL--bold: #{$fontsize-corps-de-texte-xl-bold};
+  --fontsize-Corps-de-texte-LG--regular: #{$fontsize-corps-de-texte-lg-regular};
+  --fontsize-Corps-de-texte-LG--medium: #{$fontsize-corps-de-texte-lg-medium};
+  --fontsize-Corps-de-texte-MD--regular: #{$fontsize-corps-de-texte-md-regular};
+  --fontsize-Corps-de-texte-MD--medium: #{$fontsize-corps-de-texte-md-medium};
+  --fontsize-Corps-de-texte-SM--regular: #{$fontsize-corps-de-texte-sm-regular};
+  --fontsize-Corps-de-texte-SM--medium: #{$fontsize-corps-de-texte-sm-medium};
+  --fontsize-Corps-de-texte-XS--regular: #{$fontsize-corps-de-texte-xs-regular};
+  --fontsize-Corps-de-texte-XS--bold: #{$fontsize-corps-de-texte-xs-bold};
+  --fontsize-Corps-de-texte-LG--bold: #{$fontsize-corps-de-texte-lg-bold};
+  --fontsize-Corps-de-texte-MD--bold: #{$fontsize-corps-de-texte-md-bold};
+  --fontsize-Corps-de-texte-MD--italique: #{$fontsize-corps-de-texte-md-italique};
+  --fontsize-Corps-de-texte-SM--bold: #{$fontsize-corps-de-texte-sm-bold};
+  --fontsize-Corps-de-texte-SM--italique: #{$fontsize-corps-de-texte-sm-italique};
+  --fontsize-Corps-de-texte-XS--souligné: #{$fontsize-corps-de-texte-xs-souligne};
+  --fontsize-Corps-de-texte-XS--italique: #{$fontsize-corps-de-texte-xs-italique};
+  --fontsize-Corps-de-texte-XS--maj: #{$fontsize-corps-de-texte-xs-maj};
+
+  // Font sizes - Corps de texte alternatifs
+  --fontsize-Corps-de-texte-alternatifs-LG-Texte-article-regular: #{$fontsize-corps-de-texte-alternatifs-lg-texte-article-regular};
+  --fontsize-Corps-de-texte-alternatifs-LG-Texte-article-bold: #{$fontsize-corps-de-texte-alternatifs-lg-texte-article-bold};
+  --fontsize-Corps-de-texte-alternatifs-MD-Texte-standard-regular: #{$fontsize-corps-de-texte-alternatifs-md-texte-standard-regular};
+  --fontsize-Corps-de-texte-alternatifs-MD-Texte-standard-bold: #{$fontsize-corps-de-texte-alternatifs-md-texte-standard-bold};
+  --fontsize-Corps-de-texte-alternatifs-SM-Texte-détail-regular: #{$fontsize-corps-de-texte-alternatifs-sm-texte-detail-regular};
+  --fontsize-Corps-de-texte-alternatifs-SM-Texte-détail-bold: #{$fontsize-corps-de-texte-alternatifs-sm-texte-detail-bold};
+  --fontsize-Corps-de-texte-alternatifs-XS-Texte-mention-regular: #{$fontsize-corps-de-texte-alternatifs-xs-texte-mention-regular};
+
+  // Line heights - Titres alternatifs
+  --Line-Height-Titres-alternatifs-XL-desktop: #{$line-height-titres-alternatifs-xl-desktop};
+  --Line-Height-Titres-alternatifs-XL-mobile: #{$line-height-titres-alternatifs-xl-mobile};
+  --Line-Height-Titres-alternatifs-LG-desktop: #{$line-height-titres-alternatifs-lg-desktop};
+  --Line-Height-Titres-alternatifs-LG-mobile: #{$line-height-titres-alternatifs-lg-mobile};
+  --Line-Height-Titres-alternatifs-MD-desktop: #{$line-height-titres-alternatifs-md-desktop};
+  --Line-Height-Titres-alternatifs-MD-mobile: #{$line-height-titres-alternatifs-md-mobile};
+  --Line-Height-Titres-alternatifs-SM-desktop: #{$line-height-titres-alternatifs-sm-desktop};
+  --Line-Height-Titres-alternatifs-SM-mobile: #{$line-height-titres-alternatifs-sm-mobile};
+  --Line-Height-Titres-alternatifs-XS-desktop: #{$line-height-titres-alternatifs-xs-desktop};
+  --Line-Height-Titres-alternatifs-XS-mobile: #{$line-height-titres-alternatifs-xs-mobile};
+
+  // Line heights - Titres
+  --Line-Height-Titres-XL-desktop: #{$line-height-titres-xl-desktop};
+  --Line-Height-Titres-XL-mobile: #{$line-height-titres-xl-mobile};
+  --Line-Height-Titres-LG-desktop: #{$line-height-titres-lg-desktop};
+  --Line-Height-Titres-LG-mobile: #{$line-height-titres-lg-mobile};
+  --Line-Height-Titres-MD-desktop: #{$line-height-titres-md-desktop};
+  --Line-Height-Titres-MD-mobile: #{$line-height-titres-md-mobile};
+  --Line-Height-Titres-SM-desktop: #{$line-height-titres-sm-desktop};
+  --Line-Height-Titres-SM-mobile: #{$line-height-titres-sm-mobile};
+  --Line-Height-Titres-XS-desktop: #{$line-height-titres-xs-desktop};
+  --Line-Height-Titres-XS-mobile: #{$line-height-titres-xs-mobile};
+  --Line-Height-Titres-XSS-desktop: #{$line-height-titres-xss-desktop};
+  --Line-Height-Titres-XSS-mobile: #{$line-height-titres-xss-mobile};
+
+  // Line heights - Corps de texte
+  --Line-Height-Corps-de-texte-XL--regular: #{$line-height-corps-de-texte-xl-regular};
+  --Line-Height-Corps-de-texte-XL--bold: #{$line-height-corps-de-texte-xl-bold};
+  --Line-Height-Corps-de-texte-LG--regular: #{$line-height-corps-de-texte-lg-regular};
+  --Line-Height-Corps-de-texte-LG--medium: #{$line-height-corps-de-texte-lg-medium};
+  --Line-Height-Corps-de-texte-LG--bold: #{$line-height-corps-de-texte-lg-bold};
+  --Line-Height-Corps-de-texte-MD--regular: #{$line-height-corps-de-texte-md-regular};
+  --Line-Height-Corps-de-texte-MD--medium: #{$line-height-corps-de-texte-md-medium};
+  --Line-Height-Corps-de-texte-MD--bold: #{$line-height-corps-de-texte-md-bold};
+  --Line-Height-Corps-de-texte-MD--italique: #{$line-height-corps-de-texte-md-italique};
+  --Line-Height-Corps-de-texte-SM--regular: #{$line-height-corps-de-texte-sm-regular};
+  --Line-Height-Corps-de-texte-SM--medium: #{$line-height-corps-de-texte-sm-medium};
+  --Line-Height-Corps-de-texte-SM--bold: #{$line-height-corps-de-texte-sm-bold};
+  --Line-Height-Corps-de-texte-SM--italique: #{$line-height-corps-de-texte-sm-italique};
+  --Line-Height-Corps-de-texte-XS--regular: #{$line-height-corps-de-texte-xs-regular};
+  --Line-Height-Corps-de-texte-XS--bold: #{$line-height-corps-de-texte-xs-bold};
+  --Line-Height-Corps-de-texte-XS--souligné: #{$line-height-corps-de-texte-xs-souligne};
+  --Line-Height-Corps-de-texte-XS--italique: #{$line-height-corps-de-texte-xs-italique};
+  --Line-Height-Corps-de-texte-XS--maj: #{$line-height-corps-de-texte-xs-maj};
+
+  // Line heights - Corps de texte alternatifs
+  --Line-Height-Corps-de-texte-alternatifs-LG-Texte-article-regular: #{$line-height-corps-de-texte-alternatifs-lg-texte-article-regular};
+  --Line-Height-Corps-de-texte-alternatifs-LG-Texte-article-bold: #{$line-height-corps-de-texte-alternatifs-lg-texte-article-bold};
+  --Line-Height-Corps-de-texte-alternatifs-MD-Texte-standard-regular: #{$line-height-corps-de-texte-alternatifs-md-texte-standard-regular};
+  --Line-Height-Corps-de-texte-alternatifs-MD-Texte-standard-bold: #{$line-height-corps-de-texte-alternatifs-md-texte-standard-bold};
+  --Line-Height-Corps-de-texte-alternatifs-SM-Texte-détail-regular: #{$line-height-corps-de-texte-alternatifs-sm-texte-detail-regular};
+  --Line-Height-Corps-de-texte-alternatifs-SM-Texte-détail-bold: #{$line-height-corps-de-texte-alternatifs-sm-texte-detail-bold};
+  --Line-Height-Corps-de-texte-alternatifs-XS-Texte-mention-regular: #{$line-height-corps-de-texte-alternatifs-xs-texte-mention-regular};
+
+  // Font weights
+  --Font-Weight-regular: #{$font-weight-regular};
+  --Font-Weight-medium: #{$font-weight-medium};
+  --Font-Weight-bold: #{$font-weight-bold};
+  --Font-Weight-italic: #{$font-weight-italic};
+}
